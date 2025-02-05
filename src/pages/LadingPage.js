@@ -1,7 +1,7 @@
 // src/pages/LandingPage.js
 import React from 'react';
 import Header from '../components/Header/Header';
-import ProductCard from '../components/ProducCard/ProductCard';
+import ProductCard from '../components/ProductCard/ProductCard';
 import FAQ from '../components/FAQ/FAQ';
 import Footer from '../components/Footer/Footer';
 
