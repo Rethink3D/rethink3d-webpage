@@ -1,7 +1,11 @@
+// src/App.js
+import React from 'react';
+import LandingPage from './pages/LadingPage';
+
 function App() {
   return (
     <div>
-      <h1>Bem-vindo a LandingPage da Rethink3D!</h1>
+      <LandingPage />
     </div>
   );
 }
