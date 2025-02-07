@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-scroll";
 import "./Header.css";
+import logo from "../../assets/images/logo.svg";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -33,7 +34,7 @@ const Header = () => {
   return (
     <header>
       <div className="logo-and-name">
-        <img src="logo.svg" alt="Rethink3D Logo" />
+        <img src={logo} alt="Rethink3D Logo" />
         <h1 className="company-name">Rethink3D</h1>
       </div>
 
