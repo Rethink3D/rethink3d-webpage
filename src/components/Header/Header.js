@@ -1,9 +1,10 @@
 import React, { useState, useEffect, useRef } from "react";
+import { Link } from "react-scroll";
 import "./Header.css";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const menuRef = useRef(null); // Referência para o menu
+  const menuRef = useRef(null);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -13,7 +14,6 @@ const Header = () => {
     setIsMenuOpen(false);
   };
 
-  // Fecha o menu ao clicar fora dele
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (menuRef.current && !menuRef.current.contains(event.target)) {
@@ -37,28 +37,26 @@ const Header = () => {
         <h1 className="company-name">Rethink3D</h1>
       </div>
 
-      {/* Botão de Menu (Hamburguer) */}
       <button className="menu-toggle" onClick={toggleMenu}>
         ☰
       </button>
 
-      {/* Menu de Navegação */}
       <nav ref={menuRef} className={`menu ${isMenuOpen ? "open" : ""}`}>
         <ul>
           <li>
-            <a href="#quem-somos" onClick={closeMenu}>
+            <Link to="faq" smooth={true} duration={500} onClick={closeMenu}>
               Quem somos
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#faq" onClick={closeMenu}>
+            <Link to="faq" smooth={true} duration={500} onClick={closeMenu}>
               FAQ
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#contato" onClick={closeMenu}>
+            <Link to="contato" smooth={true} duration={500} onClick={closeMenu}>
               Contato
-            </a>
+            </Link>
           </li>
         </ul>
       </nav>

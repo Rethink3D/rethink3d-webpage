@@ -33,10 +33,8 @@ const products = [
 const ProductCarousel = () => {
   return (
     <section className="product-carousel">
-      <h2>
-        Imagine o que quiser, <br />{" "}
-        <span className="highlight">nós cuidamos do resto.</span>
-      </h2>
+      <h2 className="center">Imagine o que quiser,</h2>
+      <h2 className="center2">nós cuidamos do resto.</h2>
       <h3 className="catalog-title">Catálogo</h3>
 
       <Swiper
@@ -61,12 +59,8 @@ const ProductCarousel = () => {
         ))}
       </Swiper>
 
-      <p className="print-text">
-        E todos feitos com 
-      </p>
-      <p className="impressao3d">
-       Impressão 3D
-      </p>
+      <p className="print-text">E todos feitos com</p>
+      <p className="impressao3d">Impressão 3D</p>
     </section>
   );
 };

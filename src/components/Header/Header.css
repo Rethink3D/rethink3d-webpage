@@ -5,6 +5,7 @@ header {
   padding: 15px;
   background-color: #000;
   position: relative;
+  padding-bottom: 0px;
 }
 
 .logo-and-name {
@@ -17,7 +18,7 @@ header {
   font-weight: 100;
   font-size: 36px;
   color: #fff;
-  margin-left: 10px;
+  margin-left: 5px;
 }
 
 .menu {
@@ -30,6 +31,7 @@ header {
   list-style: none;
   padding: 0;
   margin: 0;
+  margin-right: 10px;
 }
 
 .menu ul li {
@@ -39,7 +41,7 @@ header {
 .menu ul li a {
   color: #fff;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 30px;
 }
 
 .menu ul li a:hover {
@@ -53,6 +55,7 @@ header {
   color: #fff;
   font-size: 30px;
   cursor: pointer;
+  margin-top: 0;
 }
 
 /* ✅ RESPONSIVIDADE: Menu hamburguer só aparece em telas menores */
@@ -62,7 +65,7 @@ header {
   }
 
   .menu {
-    position: fixed; /* Em vez de absolute */
+    position: fixed;
     top: 60px;
     right: 10px;
     width: 200px;
@@ -74,18 +77,24 @@ header {
     opacity: 0;
     transform: translateY(-10px);
     pointer-events: none;
-    visibility: hidden; /* Evita que o espaço seja reservado */
+    visibility: hidden;
   }
 
   .menu.open {
     opacity: 1;
     transform: translateY(0);
     pointer-events: auto;
-    visibility: visible; /* Mostra o menu ao abrir */
+    visibility: visible;
   }
 
   .menu ul {
     flex-direction: column;
     text-align: center;
+  }
+
+  .menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
   }
 }
