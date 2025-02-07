@@ -1,47 +1,91 @@
-/* src/components/Header/Header.css */
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
+  padding: 15px;
   background-color: #000;
+  position: relative;
 }
 
 .logo-and-name {
   display: flex;
-  align-items: center; 
+  align-items: center;
 }
 
-.company-name h1 {
-  font-size: 48px;
-  font-weight: lighter;
+.company-name {
+  font-family: "Roboto", serif;
+  font-weight: 100;
+  font-size: 36px;
   color: #fff;
-  margin: 0;
+  margin-left: 10px;
 }
 
 .menu {
-  margin-right: 15px;
+  display: flex;
 }
 
 .menu ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
   display: flex;
   gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .menu ul li {
-  display: inline;
+  padding: 10px;
 }
 
 .menu ul li a {
-  text-decoration: none;
   color: #fff;
-  font-size: 24px;
-  font-weight: thin;
+  text-decoration: none;
+  font-size: 20px;
 }
 
 .menu ul li a:hover {
   color: #007bff;
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+/* ✅ RESPONSIVIDADE: Menu hamburguer só aparece em telas menores */
+@media (max-width: 720px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .menu {
+    position: fixed; /* Em vez de absolute */
+    top: 60px;
+    right: 10px;
+    width: 200px;
+    background: rgba(0, 0, 0, 0.9);
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 10px;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    opacity: 0;
+    transform: translateY(-10px);
+    pointer-events: none;
+    visibility: hidden; /* Evita que o espaço seja reservado */
+  }
+
+  .menu.open {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+    visibility: visible; /* Mostra o menu ao abrir */
+  }
+
+  .menu ul {
+    flex-direction: column;
+    text-align: center;
+  }
 }
