@@ -16,11 +16,11 @@ app.use(express.urlencoded({ extended: false }));
 
 const requestCollection = connection.collection("requests");
 
-app.get("/", (req, res) => {
+app.get("/api/", (req, res) => {
   res.send({ status: 200, message: "API de Solicitações - Rethink3D" });
 });
 
-app.post("/requests", async (req, res) => {
+app.post("/api/requests", async (req, res) => {
   try {
     const newRequest = { ...req.body, date: new Date().toISOString() };
 
@@ -36,7 +36,7 @@ app.post("/requests", async (req, res) => {
   }
 });
 
-app.get("/requests", async (req, res) => {
+app.get("/api/requests", async (req, res) => {
   try {
     const requests = await requestCollection.find().toArray();
     res.send(requests);
@@ -45,7 +45,7 @@ app.get("/requests", async (req, res) => {
   }
 });
 
-app.delete("/requests", async (req, res) => {
+app.delete("/api/requests", async (req, res) => {
   res.status(500).send({ message: "Não implementado ainda." });
 });
 
