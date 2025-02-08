@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import "./RequestForm.css";
+import sendRequest from "./sendRequest";
 
 const RequestForm = () => {
   const {
@@ -40,9 +41,8 @@ const RequestForm = () => {
     setValue("phone", formattedPhone);
   };
 
-  const onSubmit = (data) => {
-    console.log("Dados enviados:", data);
-    alert("Solicitação enviada com sucesso!");
+  const onSubmit = async (data) => {
+    await sendRequest(data);
   };
 
   return (
