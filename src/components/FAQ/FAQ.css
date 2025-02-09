@@ -1,9 +1,9 @@
 .faq {
   font-family: "Roboto", serif;
   padding: 20px;
-  background-color: #000;
   font-weight: 300;
   font-size: 1.5em;
+  margin: 0 20%;
 }
 
 .faq-item {
@@ -30,8 +30,15 @@ a {
   font-weight: bold;
 }
 
+p {
+  font-weight: 100;
+}
+
+
+
 @media (max-width: 720px) {
   .faq {
     font-size: 1em;
+    margin: 0;
   }
 }

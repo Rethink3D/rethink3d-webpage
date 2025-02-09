@@ -11,22 +11,23 @@ import produtoC from "../../assets/images/produto.png";
 
 const products = [
   {
-    id: 1,
-    name: "Produto A",
-    description: "Descrição do Produto A",
-    image: produtoA,
+    name: "Caixa para Baralho",
+    description:
+      "Uma caixa para guardar seus jogos de baralho (UNO, Pokémon TCG, Yu-Gi-Oh!, Magic the Gathering, etc.)",
+    image:
+      "https://makerworld.bblmw.com/makerworld/model/US8624c87707b05f/design/2025-02-05_c3b9226918525.png?x-oss-process=image/resize,w_1000/format,webp",
   },
   {
-    id: 2,
-    name: "Produto B",
-    description: "Descrição do Produto B",
-    image: produtoB,
+    name: "Cubone (Pokémon)",
+    description: "Pokémon Cubone em tamanho real, feito com filamentos bege, latte, jade e preto.",
+    image:
+      "https://makerworld.bblmw.com/makerworld/model/USc8f9500fb2c50a/design/2025-02-05_ba8b652c8cedf.jpg?x-oss-process=image/resize,w_1000/format,webp",
   },
   {
-    id: 3,
     name: "Produto C",
     description: "Descrição do Produto C",
-    image: produtoC,
+    image:
+      "https://makerworld.bblmw.com/makerworld/model/US8624c87707b05f/design/2025-02-05_c3b9226918525.png?x-oss-process=image/resize,w_1000/format,webp",
   },
 ];
 
@@ -49,7 +50,7 @@ const ProductCarousel = () => {
         }}
       >
         {products.map((product) => (
-          <SwiperSlide key={product.id}>
+          <SwiperSlide key={product.name}>
             <div className="product-card">
               <img src={product.image} alt={product.name} />
               <h4>{product.name}</h4>
@@ -59,7 +60,7 @@ const ProductCarousel = () => {
         ))}
       </Swiper>
 
-      <p className="print-text">E todos feitos com</p>
+      <p className="print-text">E todos feitos através da</p>
       <p className="impressao3d">Impressão 3D</p>
     </section>
   );

@@ -3,7 +3,6 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 15px;
-  background-color: #000;
   position: relative;
   padding-bottom: 0px;
 }
@@ -11,6 +10,7 @@ header {
 .logo-and-name {
   display: flex;
   align-items: center;
+  flex: 1;
 }
 
 .company-name {
@@ -19,6 +19,7 @@ header {
   font-size: 36px;
   color: #fff;
   margin-left: 5px;
+  width: 100%;
 }
 
 .menu {
@@ -45,7 +46,7 @@ header {
 }
 
 .menu ul li a:hover {
-  color: #007bff;
+  color: white;
 }
 
 .menu-toggle {
@@ -58,10 +59,15 @@ header {
   margin-top: 0;
 }
 
+.logo {
+  mix-blend-mode: screen;
+}
+
 /* ✅ RESPONSIVIDADE: Menu hamburguer só aparece em telas menores */
 @media (max-width: 720px) {
   .menu-toggle {
     display: block;
+    flex: 0;
   }
 
   .menu {
@@ -96,5 +102,9 @@ header {
     color: #fff;
     text-decoration: none;
     font-size: 20px;
+  }
+
+  .logo {
+    width: 33%;
   }
 }

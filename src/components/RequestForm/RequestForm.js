@@ -87,7 +87,9 @@ const RequestForm = () => {
           <span className="error-message">{errors.phone.message}</span>
         )}
 
-        <button type="submit">Enviar</button>
+        <button type="submit" className="submit-button">
+          Enviar
+        </button>
       </form>
     </section>
   );
