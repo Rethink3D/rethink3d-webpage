@@ -1,20 +1,32 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import "./ProductCarousel.css";
-import products from "./products.json";
+import rawProducts from "./products.json";
+import { useSearchParams } from "react-router-dom";
 
 const ProductCarousel = () => {
-  //const categoryParam = 
+  const [products, setProducts] = useState(rawProducts);
+  const [searchParams] = useSearchParams();
+  const category = searchParams.get("category");
+
+  useEffect(() => {
+    if (category) {
+      const filteredProducts = rawProducts.filter(
+        (product) => product.category.toLowerCase() === category.toLowerCase()
+      );
+      setProducts(filteredProducts);
+    }
+  }, [category]);
 
   return (
     <section className="product-carousel">
       <div className="content">
         <h2 className="center">Imagine o que quiser,</h2>
         <h2 className="center2">nós cuidamos do resto.</h2>
-        <h3 className="catalog-title">Catálogo</h3>
+        <h3 className="catalog-title">Catálogo (Categoria: '{category}')</h3>
         <h2 className="userPhrase">"Eu quero..."</h2>
       </div>
 
