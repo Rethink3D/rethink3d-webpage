@@ -37,7 +37,7 @@ const FAQ = () => {
         </h3>
         <p>
           A <strong>Rethink3D</strong> é uma startup que visa revolucionar o mercado de impressão
-          3D, conectando as necessidades das pessoas a quem possa resolvê-las.
+          3D, conectando as necessidades das pessoas a quem possa suprí-las.
         </p>
       </div>
       <div className="faq-item">

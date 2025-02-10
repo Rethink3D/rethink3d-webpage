@@ -16,3 +16,10 @@ a {
 a:hover {
   color: white;
 }
+
+.swiper-pagination-bullet {
+  background-color: #444444 !important
+}
+.swiper-pagination-bullet-active {
+  background-color: #dddddd !important;
+}

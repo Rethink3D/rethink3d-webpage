@@ -1,8 +1,10 @@
 .product-carousel {
   font-family: "Roboto", serif;
   color: #fff;
-  padding: 0px 20px;
-  
+}
+
+.content {
+  margin: 0 20px;
 }
 
 h2 {
@@ -24,17 +26,35 @@ h2 {
 }
 
 .catalog-title {
-  font-size: 1rem;
-  text-align: left;
+  font-size: 0.8rem;
+  text-align: right;
   margin-bottom: 20px;
-  font-weight: 200;
+  font-weight: 500;
 }
 
 .product-card {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
   padding: 20px;
   border-radius: 10px;
   text-align: center;
   transition: transform 0.3s ease-in-out;
+  gap: 7px;
+  margin-bottom: 10%;
+}
+
+.product-card * {
+  margin: 0;
+  text-align: start;
+}
+
+.product-carousel .userPhrase {
+  font-weight: 200;
+  font-style: italic;
+}
+.product-card h4 {
+  font-size: 1.5rem;
 }
 
 .product-card:hover {
@@ -43,25 +63,33 @@ h2 {
 }
 
 .product-card img {
-  width: 100%;
-  max-width: 200px;
-  margin-bottom: 10px;
+  width: 80%;
+  object-fit: cover;
+  aspect-ratio: 1 / 1;
+  border-radius: 10px;
+}
+
+.product-card p {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* number of lines to show */
+          line-clamp: 3; 
+  -webkit-box-orient: vertical;
 }
 
 .print-text {
   font-weight: 100;
   font-size: 2.5rem;
   text-align: left;
-  margin-top: 20px;
-  margin-bottom: 5px;
+  margin: 0;
 }
 
 .impressao3d {
-  margin-top: 0;
   font-weight: bold;
   font-size: 2.5rem;
   text-decoration: underline dotted;
   text-underline-offset: 5px;
+  margin: 0;
 }
 /* Responsividade */
 @media (min-width: 768px) {
@@ -70,13 +98,17 @@ h2 {
     margin: 0 20%;
   }
 
+  .product-card {
+    border: none;
+  }
+
   h2 {
     font-size: 2.5rem;
   }
 
   .catalog-title {
     font-size: 2rem;
-    font-weight: 200;
+    font-weight: 400;
     text-align: left;
   }
 
@@ -85,15 +117,9 @@ h2 {
     font-size: 3em;
     text-align: center;
   }
-}
 
-/* Estiliza os pontos do Swiper */
-.swiper-pagination-bullet {
-  background-color: white !important;
-  opacity: 1;
-}
-
-/* Altera a cor do ponto ativo */
-.swiper-pagination-bullet-active {
-  background-color: blue !important;
+  .print-text, .impressao3d {
+    text-align: center;
+    font-size: 4em;
+  }
 }
