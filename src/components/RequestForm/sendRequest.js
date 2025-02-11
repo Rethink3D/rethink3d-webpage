@@ -2,7 +2,7 @@ import { toast } from "react-toastify";
 
 export default async function sendRequest(data) {
   try {
-    const response = await fetch("/api/requests", {
+    const response = await fetch("api/requests", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
