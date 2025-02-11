@@ -1,41 +1,39 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import "./ProductCarousel.css";
-
-import produtoA from "../../assets/images/produto.png";
-import produtoB from "../../assets/images/produto.png";
-import produtoC from "../../assets/images/produto.png";
-
-const products = [
-  {
-    id: 1,
-    name: "Produto A",
-    description: "Descrição do Produto A",
-    image: produtoA,
-  },
-  {
-    id: 2,
-    name: "Produto B",
-    description: "Descrição do Produto B",
-    image: produtoB,
-  },
-  {
-    id: 3,
-    name: "Produto C",
-    description: "Descrição do Produto C",
-    image: produtoC,
-  },
-];
+import rawProducts from "./products.json";
+import { useSearchParams } from "react-router-dom";
 
 const ProductCarousel = () => {
+  const [products, setProducts] = useState(rawProducts);
+  const [searchParams] = useSearchParams();
+  const category = searchParams.get("category");
+
+  useEffect(() => {
+    if (category) {
+      const filteredProducts = rawProducts.filter(
+        (product) => product.category.toLowerCase() === category.toLowerCase()
+      );
+      setProducts(filteredProducts);
+    }
+  }, [category]);
+
   return (
     <section className="product-carousel">
-      <h2 className="center">Imagine o que quiser,</h2>
-      <h2 className="center2">nós cuidamos do resto.</h2>
-      <h3 className="catalog-title">Catálogo</h3>
+      <div className="content">
+        <h2 className="center">Imagine o que quiser,</h2>
+        <h2 className="center2">nós cuidamos do resto.</h2>
+        {category && (
+          <span className="category">
+            <h3>Categoria:</h3>
+            <h2>{category}</h2>
+          </span>
+        )}
+        <h2 className="userPhrase">"Eu quero..."</h2>
+      </div>
 
       <Swiper
         modules={[Pagination, Autoplay]}
@@ -43,13 +41,14 @@ const ProductCarousel = () => {
         slidesPerView={1}
         pagination={{ clickable: true }}
         autoplay={{ delay: 4000 }}
+        color="white"
         breakpoints={{
           768: { slidesPerView: 2 },
           1024: { slidesPerView: 3 },
         }}
       >
         {products.map((product) => (
-          <SwiperSlide key={product.id}>
+          <SwiperSlide key={product.name}>
             <div className="product-card">
               <img src={product.image} alt={product.name} />
               <h4>{product.name}</h4>
@@ -59,8 +58,10 @@ const ProductCarousel = () => {
         ))}
       </Swiper>
 
-      <p className="print-text">E todos feitos com</p>
-      <p className="impressao3d">Impressão 3D</p>
+      <div className="content bottom">
+        <p className="print-text">E todos feitos através da</p>
+        <p className="impressao3d">Impressão 3D</p>
+      </div>
     </section>
   );
 };

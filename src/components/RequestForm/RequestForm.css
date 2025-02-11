@@ -1,6 +1,6 @@
 .request-form {
   font-family: "Roboto", sans-serif;
-  padding: 20px;
+  padding: 0 20px;
   text-align: left;
   color: white;
   max-width: 1000px;
@@ -9,32 +9,32 @@
 
 .request-title {
   font-style: italic;
-  font-size: 2rem;
-  margin-bottom: 20px;
+  font-size: 3rem;
   text-align: left;
-  font-weight: 200;
+  font-weight: 100;
 }
 
 /* 🔹 Ajuste no container do textarea */
+form {
+  box-sizing: content-box;
+  width: 100%;
+}
+
 .textarea-container {
   position: relative;
-  width: 100%;
-  max-width: 1500px;
-  margin: auto;
+  box-sizing: content-box;
 }
 
 textarea {
+  box-sizing: border-box;
   width: 100%;
   height: 300px;
-  max-width: 1500px;
-  padding: 15px;
   border-radius: 8px;
   border: none;
   font-size: 1.2rem;
-  resize: none;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  resize: none;
+  padding: 20px;
 }
 
 /* 🔹 Contador de caracteres */
@@ -56,25 +56,25 @@ textarea {
 }
 
 input {
-  width: 100%;
-  max-width: 1500px;
-  padding: 15px;
+  box-sizing: border-box;
   margin-bottom: 20px;
   border-radius: 8px;
   border: none;
   font-size: 1.2rem;
+  padding: 20px;
+  width: 100%;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 /* 🔹 Estilo para o erro */
 .error-message {
-  color: red;
-  font-size: 1rem;
-  text-align: center;
+  color: rgb(255, 73, 73);
+  font-size: 0.8rem;
+  text-align: left;
   display: block;
   margin-top: 10px;
+  font-family: "Roboto";
+  font-weight: 200;
 }
 
 /* 🔹 Botão */
@@ -98,6 +98,13 @@ button:hover {
   background: #333;
 }
 
+.submit-button {
+  background-color: white;
+  color: #151515;
+  font-weight: 700;
+  font-family: "Roboto";
+}
+
 /* 🔹 Ajuste no input para telas pequenas */
 @media (max-width: 768px) {
   .request-form {
@@ -110,19 +117,18 @@ button:hover {
   }
 
   textarea {
-    width: calc(100% - 30px);
+    width: 100%;
     height: 120px;
   }
 
   input {
-    width: calc(100% - 30px);
+    width: 100%;
     height: auto;
     font-size: 1rem;
     padding: 12px;
     border-radius: 8px;
     border: none;
     display: block;
-    margin: 0 auto;
   }
 
   .char-count {

@@ -1,6 +1,25 @@
 body {
   margin: 0;
   font-family: "Roboto", serif;
-  background-color: #000;
+  background-color: #151515;
   font-style: normal;
+}
+
+a {
+  color: white;
+  font-weight: 500;
+  text-decoration: 1px solid white underline;
+  text-underline-offset: 10px;
+  cursor: pointer;
+}
+
+a:hover {
+  color: white;
+}
+
+.swiper-pagination-bullet {
+  background-color: #444444 !important
+}
+.swiper-pagination-bullet-active {
+  background-color: #dddddd !important;
 }

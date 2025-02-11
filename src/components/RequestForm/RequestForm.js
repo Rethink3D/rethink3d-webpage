@@ -8,6 +8,7 @@ const RequestForm = () => {
     register,
     handleSubmit,
     setValue,
+    reset,
     formState: { errors },
   } = useForm();
 
@@ -41,8 +42,17 @@ const RequestForm = () => {
     setValue("phone", formattedPhone);
   };
 
+  const handleNameChange = (e) => {
+    const name = e.target.value;
+    setValue("name", name);
+  };
+
   const onSubmit = async (data) => {
-    await sendRequest(data);
+    const success = await sendRequest(data);
+    if (success) {
+      reset();
+      setCharCount(0);
+    }
   };
 
   return (
@@ -70,6 +80,23 @@ const RequestForm = () => {
           <span className="error-message">{errors.description.message}</span>
         )}
 
+        <label className="phone-label">Nome:</label>
+        <input
+          type="text"
+          {...register("name", {
+            required: "Este campo é obrigatório",
+            maxLength: {
+              value: 50,
+              message: "Número de caracteres superior ao limite!",
+            },
+          })}
+          placeholder="Apenas o primeiro nome"
+          onChange={handleNameChange}
+        />
+        {errors.name && (
+          <span className="error-message">{errors.name.message}</span>
+        )}
+
         <label className="phone-label">Telefone celular/WhatsApp:</label>
         <input
           type="tel"
@@ -87,7 +114,9 @@ const RequestForm = () => {
           <span className="error-message">{errors.phone.message}</span>
         )}
 
-        <button type="submit">Enviar</button>
+        <button type="submit" className="submit-button">
+          Enviar
+        </button>
       </form>
     </section>
   );

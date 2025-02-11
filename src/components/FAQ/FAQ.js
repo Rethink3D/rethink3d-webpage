@@ -27,7 +27,7 @@ const FAQ = () => {
           O que são <span className="bold">Makers?</span>
         </h3>
         <p>
-          'Makers' são as pessoas responsáveis pelos serviços de impressão e
+          <strong>'Makers'</strong> são as pessoas responsáveis pelos serviços de impressão e
           modelagem 3D. Assim como você, são clientes de nossa plataforma.
         </p>
       </div>
@@ -36,12 +36,12 @@ const FAQ = () => {
           O que é a <span className="bold">Rethink3D?</span>
         </h3>
         <p>
-          A Rethink3D é uma startup que visa revolucionar o mercado de impressão
-          3D, conectando as necessidades das pessoas a quem possa resolvê-las.
+          A <strong>Rethink3D</strong> é uma startup que visa revolucionar o mercado de impressão
+          3D, conectando as necessidades das pessoas a quem possa suprí-las.
         </p>
       </div>
       <div className="faq-item">
-        <h3>Onde posso encontrar modelos 3D?</h3>
+        <h3>Onde posso encontrar mais modelos 3D?</h3>
         <p>
           Existem diversos sites especializados onde você pode baixar modelos 3D
           gratuitos.{" "}

@@ -34,7 +34,7 @@ const Header = () => {
   return (
     <header>
       <div className="logo-and-name">
-        <img src={logo} alt="Rethink3D Logo" />
+        <img src={logo} alt="Rethink3D Logo" className="logo" />
         <h1 className="company-name">Rethink3D</h1>
       </div>
 
