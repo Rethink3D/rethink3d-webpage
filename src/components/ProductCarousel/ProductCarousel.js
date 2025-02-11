@@ -26,7 +26,12 @@ const ProductCarousel = () => {
       <div className="content">
         <h2 className="center">Imagine o que quiser,</h2>
         <h2 className="center2">nós cuidamos do resto.</h2>
-        <h3 className="catalog-title">Catálogo (Categoria: '{category}')</h3>
+        {category && (
+          <span className="category">
+            <h3>Categoria:</h3>
+            <h2>{category}</h2>
+          </span>
+        )}
         <h2 className="userPhrase">"Eu quero..."</h2>
       </div>
 
@@ -53,7 +58,7 @@ const ProductCarousel = () => {
         ))}
       </Swiper>
 
-      <div className="content">
+      <div className="content bottom">
         <p className="print-text">E todos feitos através da</p>
         <p className="impressao3d">Impressão 3D</p>
       </div>

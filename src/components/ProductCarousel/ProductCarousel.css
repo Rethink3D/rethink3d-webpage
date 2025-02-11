@@ -19,7 +19,7 @@ h2 {
 }
 
 .center2 {
-  margin-bottom: 1em 0;
+  margin-bottom: 1em;
   text-align: start;
   font-weight: bold;
   font-size: 2.5rem;
@@ -73,7 +73,7 @@ h2 {
   overflow: hidden;
   display: -webkit-box;
   -webkit-line-clamp: 3; /* number of lines to show */
-          line-clamp: 3; 
+  line-clamp: 3;
   -webkit-box-orient: vertical;
 }
 
@@ -91,6 +91,18 @@ h2 {
   text-underline-offset: 5px;
   margin: 0;
 }
+
+.category * {
+  margin: 0;
+  padding: 0;
+  text-align: right;
+  font-size: 1em;
+}
+
+.content.bottom {
+  margin: 2.5em 1em;
+}
+
 /* Responsividade */
 @media (min-width: 768px) {
   .product-carousel {
@@ -118,8 +130,13 @@ h2 {
     text-align: center;
   }
 
-  .print-text, .impressao3d {
+  .print-text,
+  .impressao3d {
     text-align: center;
     font-size: 4em;
+  }
+
+  .category {
+    font-size: 2em;
   }
 }
