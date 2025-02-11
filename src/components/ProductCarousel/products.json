@@ -88,5 +88,29 @@
     "name": "Modelo de crânio humano",
     "description": "Este modelo de crânio humano pode ser usado para aprender anatomia ou apenas enlouquecer seus amigos.",
     "category": "Biologia"
+  },
+  {
+    "image": "https://thangs.com/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fproduction-thangs-public%2Fuploads%2Fattachments%2F82d9abd4-a912-470e-9948-7e1090d53bfd%2FFlexi_Cat-thangs-3.jpg&w=3840&q=85",
+    "name": "Gato Articulado",
+    "description": "Este modelo foi inspirado na forma como o tronco de um gato se alonga quando ele é carregado nos braços (como o meme Longcat).",
+    "category": "Animais"
+  },
+  {
+    "image": "https://thangs.com/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fproduction-thangs-public%2Fuploads%2Fattachments%2Fa4c79823-6fbe-42fe-aad5-dc6cb9d3b494%2FIMG_1495.JPG&w=3840&q=85",
+    "name": "Cão esqueleto",
+    "description": "Conheça o Cão esqueleto, seu próximo companheiro favorito de Halloween para impressão 3D! Este modelo é um divertido, mas não anatomicamente correto de um esqueleto, perfeito para dar um toque assustador à sua decoração.",
+    "category": "Animais"
+  },
+  {
+    "image": "https://thangs.com/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fproduction-thangs-public%2Fuploads%2Fattachments%2F3c12be33-2527-4373-8792-689ae6b8659b%2Fshark_print_01.png&w=3840&q=85",
+    "name": "Tubarão Articulado",
+    "description": "Um modelo impressionante de tubarão para impressão 3D! Perfeito para entusiastas marinhos, essa criatura trará um toque feroz à sua coleção",
+    "category": "Animais"
+  },
+  {
+    "image": "https://media.printables.com/media/prints/466362/images/3822810_65ea4750-acf5-49c3-8501-ed86fe5023ba/thumbs/inside/1280x960/jpeg/9791ac62-aed1-49f9-be02-b613f53c8a90.webp",
+    "name": "Porta-canetas de caranguejo",
+    "description": "Um porta-canetas de caranguejo fofo para segurar uma de suas canetas.",
+    "category": "Animais"
   }
 ]
