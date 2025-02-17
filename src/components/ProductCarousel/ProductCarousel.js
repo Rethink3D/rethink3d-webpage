@@ -30,7 +30,7 @@ const ProductCarousel = () => {
           <span className="category">
             <h3>Categoria:</h3>
             <h2>
-              {category.toLowerCase() === "action figures"
+              {category.toLowerCase() === "action figures" // gambiarra pra corrigir erro de impressão
                 ? "Video-game"
                 : category}
             </h2>
