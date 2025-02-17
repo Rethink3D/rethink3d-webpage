@@ -29,10 +29,15 @@ const ProductCarousel = () => {
         {category && (
           <span className="category">
             <h3>Categoria:</h3>
-            <h2>{category}</h2>
+            <h2>
+              {category.toLowerCase() === "action figures" // gambiarra pra corrigir erro de impressão
+                ? "Video-game"
+                : category}
+            </h2>
           </span>
         )}
         <h2 className="userPhrase">"Eu quero..."</h2>
+        <h2 className="catalog-title">Catálogo:*</h2>
       </div>
 
       <Swiper
@@ -57,10 +62,17 @@ const ProductCarousel = () => {
           </SwiperSlide>
         ))}
       </Swiper>
-
       <div className="content bottom">
         <p className="print-text">E todos feitos através da</p>
         <p className="impressao3d">Impressão 3D</p>
+        <span className="disclaimer">
+          *: Os produtos apresentados são meramente ilustrativos e demonstram as
+          possibilidades da tecnologia de manufatura aditiva/impressão 3D. Eles
+          não estão disponíveis para venda nem fazem parte do portfólio ou
+          acervo da Rethink3D. A possibilidade de concepção dos produtos
+          apresentados e/ou similares depende das capacidades dos Makers em sua
+          região.
+        </span>
       </div>
     </section>
   );

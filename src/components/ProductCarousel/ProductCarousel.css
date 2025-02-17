@@ -103,6 +103,12 @@ h2 {
   margin: 2.5em 1em;
 }
 
+.disclaimer {
+  font-size: 12px;
+  font-weight: 100;
+  text-align: center;
+}
+
 /* Responsividade */
 @media (min-width: 768px) {
   .product-carousel {
