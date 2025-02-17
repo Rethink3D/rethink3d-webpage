@@ -6,7 +6,6 @@ import "swiper/css/pagination";
 import "./ProductCarousel.css";
 import rawProducts from "./products.json";
 import { useSearchParams } from "react-router-dom";
-import chaveiro from "../../assets/images/products/chaveiro-evento.jpg";
 
 const ProductCarousel = () => {
   const [products, setProducts] = useState(rawProducts);
@@ -30,7 +29,11 @@ const ProductCarousel = () => {
         {category && (
           <span className="category">
             <h3>Categoria:</h3>
-            <h2>{category}</h2>
+            <h2>
+              {category.toLowerCase() === "action figures"
+                ? "Video-game"
+                : category}
+            </h2>
           </span>
         )}
         <h2 className="userPhrase">"Eu quero..."</h2>
