@@ -5,21 +5,28 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "./ProductCarousel.css";
 import rawProducts from "./products.json";
-import { useSearchParams } from "react-router-dom";
+import { useNavigate, useSearchParams } from "react-router-dom";
+import shuffle from "../../util/shuffle";
 
 const ProductCarousel = () => {
-  const [products, setProducts] = useState(rawProducts);
+  const [products, setProducts] = useState(null);
   const [searchParams] = useSearchParams();
   const category = searchParams.get("category");
+  const navigate = useNavigate();
 
   useEffect(() => {
+    shuffle(rawProducts);
+    setProducts(rawProducts);
     if (category) {
       const filteredProducts = rawProducts.filter(
         (product) => product.category.toLowerCase() === category.toLowerCase()
       );
+      if (filteredProducts.length <= 0) navigate("/");
       setProducts(filteredProducts);
+    } else {
+      setProducts((products) => products.slice(0, 10));
     }
-  }, [category]);
+  }, [category, navigate]);
 
   return (
     <section className="product-carousel">
@@ -52,15 +59,16 @@ const ProductCarousel = () => {
           1024: { slidesPerView: 3 },
         }}
       >
-        {products.map((product) => (
-          <SwiperSlide key={product.name}>
-            <div className="product-card">
-              <img src={product.image} alt={product.name} />
-              <h4>{product.name}</h4>
-              <p>{product.description}</p>
-            </div>
-          </SwiperSlide>
-        ))}
+        {products &&
+          products.map((product) => (
+            <SwiperSlide key={product.name}>
+              <div className="product-card">
+                <img src={product.image} alt={product.name} />
+                <h4>{product.name}</h4>
+                <p>{product.description}</p>
+              </div>
+            </SwiperSlide>
+          ))}
       </Swiper>
       <div className="content bottom">
         <p className="print-text">E todos feitos através da</p>
