@@ -24,6 +24,100 @@
     "category": "Cartas e Tabuleiro"
   },
   {
+    "name": "Estatueta Lobo",
+    "description": "Não chega a te morder, mas é melhor não arriscar.",
+    "image": "/assets/images/products/lobo.jpg",
+    "category": "RPG",
+    "makerLocal": {
+      "name": "Imagine V3D",
+      "instagram": "https://www.instagram.com/imagine.v3d/"
+    }
+  },
+  {
+    "name": "Jogo de Dados Completo",
+    "description": "Depois de uma longa jornada finalmente chegamos ao “Kitcard Full Dice Set”. Este kitcard combina todos os dados (D4, D6, D8, D10, D12, D20) em um kitcard, modelado para caber dentro de um giftcard médio (o kitcard tem 10,6cmx16cm).",
+    "image": "https://makerworld.bblmw.com/makerworld/model/US5f1aaf7769038d/design/2024-11-12_2b7ea0e9d96fc.jpg?x-oss-process=image/resize,w_1000/format,webp",
+    "category": "RPG"
+  },
+  {
+    "name": "Assets de Vilarejo",
+    "description": "Assets RPG. Podem ser utilizados em sessões para maior imersão!",
+    "image": "https://makerworld.bblmw.com/makerworld/model/US67b90328616b46/design/2024-11-24_54a385f865e84.jpg?x-oss-process=image/resize,w_1000/format,webp",
+    "category": "RPG"
+  },
+  {
+    "name": "Assets Terrenos",
+    "description": "Conjunto de pedras de diversos tamanhos e formatos ideais para maquetes, parte do terreno para RPG. As pedras podem ser aumentadas ou diminuídas livremente para encaixá-las no tabuleiro.",
+    "image": "https://makerworld.bblmw.com/makerworld/model/USe98b6dc893e826/design/2024-10-27_cb42adfb33b8a.jpg?x-oss-process=image/resize,w_1000/format,webp",
+    "category": "RPG"
+  },
+  {
+    "name": "Chaveiros de Evento",
+    "description": "Chaveiros personalizados com a logo do evento.",
+    "image": "/assets/images/products/chaveiro-evento.jpg",
+    "category": "Acessórios",
+    "makerLocal": {
+      "name": "Imagine V3D",
+      "instagram": "https://www.instagram.com/imagine.v3d/"
+    }
+  },
+  {
+    "name": "Chaveiros de Nome personalizados",
+    "description": "Chaveiros personalizados com o seu nome!",
+    "image": "/assets/images/products/chaveiros-nome.jpg",
+    "category": "Acessórios",
+    "makerLocal": {
+      "name": "Imagine V3D",
+      "instagram": "https://www.instagram.com/imagine.v3d/"
+    }
+  },
+  {
+    "name": "Brincos Favo de Mel",
+    "description": "Brincos de favo de mel. Impressão fácil e rápida, sem AMS, bico de 0,4 mm.",
+    "image": "https://makerworld.bblmw.com/makerworld/model/US4ca0d5209d6140/design/2025-02-10_5ff75081e235e.jpg?x-oss-process=image/resize,w_1000/format,webp",
+    "category": "Acessórios"
+  },
+  {
+    "name": "Porta Canetas VW AP",
+    "description": "Juntando a paixão por carros antigos, em especial aos quadrados da VW, e a profissão de professor, o @vitorcominsta colocou esse lindo porta canetas do bloco de motor VW AP para deixar mais lindo ainda o seu cantinho de estudo 🚙",
+    "image": "/assets/images/products/porta-canetas-motor.jpg",
+    "category": "Escritório",
+    "makerLocal": {
+      "name": "Imagine V3D",
+      "instagram": "https://www.instagram.com/imagine.v3d/"
+    }
+  },
+  {
+    "name": "Corujinha Porta-objetos",
+    "description": "Todo o estilo dessa corujinha porta objetos para presentear seu professor (a) preferido (a) que marcou a sua vida.",
+    "image": "/assets/images/products/corujinha-porta-objetos.jpg",
+    "category": "Escritório",
+    "makerLocal": {
+      "name": "Imagine V3D",
+      "instagram": "https://www.instagram.com/imagine.v3d/"
+    }
+  },
+  {
+    "name": "Suporte de celular Bola de Basquete",
+    "description": "Suporte de celular - bola de basquete. 🏀📱",
+    "image": "/assets/images/products/suporte-bola-basquete.jpg",
+    "category": "Escritório",
+    "makerLocal": {
+      "name": "Imagine V3D",
+      "instagram": "https://www.instagram.com/imagine.v3d/"
+    }
+  },
+  {
+    "name": "Suporte de celular Pilha de Projéteis",
+    "description": "Suporte de celular pilha de projéteis.",
+    "image": "/assets/images/products/suporte-pilha-projeteis.jpg",
+    "category": "Escritório",
+    "makerLocal": {
+      "name": "Imagine V3D",
+      "instagram": "https://www.instagram.com/imagine.v3d/"
+    }
+  },
+  {
     "name": "Super Sonic",
     "description": "Estatueta Super Sonic - impressa em filamentos Elegoo e Forshape.",
     "image": "https://makerworld.bblmw.com/makerworld/model/US90864b77b96c2f/design/2025-02-06_7df7ed8c7060c.jpeg?x-oss-process=image/resize,w_1000/format,webp",
@@ -40,6 +134,16 @@
     "description": "Stitch é um personagem alienígena da animação de grande sucesso Lilo e Stitch da Disney. Ele foi criado originalmente para causar o caos através da galáxia, marcado pelo seu temperamento abrupto e seu jeito brincalhão e malvado Azul",
     "image": "https://media.printables.com/media/prints/1164843/images/8775311_b624abcf-d270-4b29-89e8-b8bd50773c29_18af3d77-1054-41c5-aeed-83fcef344675/thumbs/inside/1280x960/webp/image-31.webp",
     "category": "Brinquedos"
+  },
+  {
+    "name": "Vaso de Flor",
+    "description": "Decore seu ambiente com esse lindo vaso em formato de flor. 🌷",
+    "image": "/assets/images/products/vaso-flor.jpg",
+    "category": "Decoração interna",
+    "makerLocal": {
+      "name": "Imagine V3D",
+      "instagram": "https://www.instagram.com/imagine.v3d/"
+    }
   },
   {
     "name": "Vaso de Plantas Oval",

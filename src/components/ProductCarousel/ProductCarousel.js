@@ -6,6 +6,7 @@ import "swiper/css/pagination";
 import "./ProductCarousel.css";
 import rawProducts from "./products.json";
 import { useSearchParams } from "react-router-dom";
+import chaveiro from "../../assets/images/products/chaveiro-evento.jpg";
 
 const ProductCarousel = () => {
   const [products, setProducts] = useState(rawProducts);

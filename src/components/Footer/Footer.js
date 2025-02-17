@@ -8,14 +8,15 @@ const Footer = () => {
       <div className="footer-content">
         <div className="footer-links">
           <a
-            href="https://instagram.com"
+            href="https://www.instagram.com/_rethink3d/"
             target="_blank"
             rel="noopener noreferrer"
           >
             <FaInstagram className="icon" /> Instagram
           </a>
           <a
-            href="https://wa.me/seunumerodetelefone"
+            //href="https://wa.me/seunumerodetelefone"
+            href="/"
             target="_blank"
             rel="noopener noreferrer"
           >
