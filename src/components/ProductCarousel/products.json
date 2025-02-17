@@ -3,55 +3,73 @@
     "name": "Caixa para Baralho",
     "description": "Uma caixa para guardar seus jogos de baralho (UNO, Pokémon TCG, Yu-Gi-Oh!, Magic the Gathering, etc.)",
     "image": "https://makerworld.bblmw.com/makerworld/model/US8624c87707b05f/design/2025-02-05_c3b9226918525.png?x-oss-process=image/resize,w_1000/format,webp",
-    "category": "Brinquedos e Video-game"
+    "category": "Cartas e Tabuleiro"
+  },
+  {
+    "name": "Conjunto de Xadrez Minimalista",
+    "description": "Jogo de xadrez de estética simples e minimalista. Todas as peças impressas com altura de camada 0,2 e posição de costura aleatória.",
+    "image": "https://makerworld.bblmw.com/makerworld/model/US65085ebbd649b6/design/2025-02-15_9f6214ab82d6d.jpeg?x-oss-process=image/resize,w_1000/format,webp",
+    "category": "Cartas e Tabuleiro"
+  },
+  {
+    "name": "Conjunto de Xadrez para viagem",
+    "description": "Este tabuleiro de xadrez tem ranhuras chaveadas, de modo que cada peça gruda e gira um pouco para não cair facilmente. Existem também slots extras em toda a volta para segurar as peças à medida que são removidas do jogo.",
+    "image": "https://makerworld.bblmw.com/makerworld/model/DSM00000001105331/design/2025-02-13_e4b16d0197d2b.jpg?x-oss-process=image/resize,w_1000/format,webp",
+    "category": "Cartas e Tabuleiro"
+  },
+  {
+    "name": "Peão Maromba",
+    "description": "Este é o peão mais forte, as peças de xadrez restantes têm medo dele e nunca ficam em seu caminho.",
+    "image": "https://makerworld.bblmw.com/makerworld/model/USbb5ac937e44c9/design/2025-02-12_544ea52201dce.jpg?x-oss-process=image/resize,w_1000/format,webp",
+    "category": "Cartas e Tabuleiro"
   },
   {
     "name": "Super Sonic",
     "description": "Estatueta Super Sonic - impressa em filamentos Elegoo e Forshape.",
     "image": "https://makerworld.bblmw.com/makerworld/model/US90864b77b96c2f/design/2025-02-06_7df7ed8c7060c.jpeg?x-oss-process=image/resize,w_1000/format,webp",
-    "category": "Brinquedos e Video-game"
+    "category": "Video-game"
   },
   {
     "name": "Cubone (Pokémon)",
     "description": "Pokémon Cubone em tamanho real, feito com filamentos bege, latte, jade e preto.",
     "image": "https://makerworld.bblmw.com/makerworld/model/USc8f9500fb2c50a/design/2025-02-05_ba8b652c8cedf.jpg?x-oss-process=image/resize,w_1000/format,webp",
-    "category": "Brinquedos e Video-game"
+    "category": "Anime"
   },
   {
     "name": "Stitch",
     "description": "Stitch é um personagem alienígena da animação de grande sucesso Lilo e Stitch da Disney. Ele foi criado originalmente para causar o caos através da galáxia, marcado pelo seu temperamento abrupto e seu jeito brincalhão e malvado Azul",
     "image": "https://media.printables.com/media/prints/1164843/images/8775311_b624abcf-d270-4b29-89e8-b8bd50773c29_18af3d77-1054-41c5-aeed-83fcef344675/thumbs/inside/1280x960/webp/image-31.webp",
-    "category": "Brinquedos e Video-game"
+    "category": "Brinquedos"
   },
   {
     "name": "Vaso de Plantas Oval",
     "description": "Um vaso de plantas em formato oval. As cores podem ser personalizadas.",
     "image": "https://makerworld.bblmw.com/makerworld/model/US2ad8f75deeba14/design/2025-02-08_f6880215cb428.jpg?x-oss-process=image/resize,w_1000/format,webp",
-    "category": "Casa"
+    "category": "Decoração interna"
   },
   {
     "name": "Mesa de Canto Hexagonal",
     "description": "Hexável: uma mesa de centro / lateral totalmente impressa. Fácil de construir, sem ferragens, poucas peças",
     "image": "https://makerworld.bblmw.com/makerworld/model/USa85c009b426455/design/2025-02-07_16a8d01296c16.jpg?x-oss-process=image/resize,w_1000/format,webp",
-    "category": "Casa"
+    "category": "Decoração interna"
   },
   {
     "name": "Arte de Parede Porsche",
     "description": "Decoração de parede Porsche 911 GT3 RS. Impressão simples e rápida com 2,5 mm de espessura.",
     "image": "https://makerworld.bblmw.com/makerworld/model/US8151594e204afa/design/2025-02-08_a3d16bc4f143e8.png?x-oss-process=image/resize,w_1000/format,webp",
-    "category": "Casa"
+    "category": "Decoração interna"
   },
   {
     "image": "https://media.printables.com/media/prints/1177517/images/8860455_e58045e1-c88a-4c6e-9eb8-475a51880148_8d047bf0-aa35-4f21-bda7-c076de5f0b79/thumbs/inside/1600x1200/jpeg/whatsapp-image-2025-02-04-at-124212-1.webp",
     "name": "Halo Armadura Espartana",
     "description": "Esta armadura espartana de Halo foi projetada para oferecer ótima articulação e um visual impressionante, sem necessidade de suportes na impressão. As peças foram adaptadas e otimizadas para facilitar a montagem e a pintura.",
-    "category": "Brinquedos e Video-game"
+    "category": "Video-game"
   },
   {
     "image": "https://media.printables.com/media/prints/1175749/images/8849044_6aba0014-5bb0-4714-a138-27bdf6bb7f7e_f72a81ec-9ca4-4418-8152-93c2d096dfb9/thumbs/inside/1600x1200/webp/image-14.webp",
     "name": "Luigi Funko Style",
     "description": "Este modelo Este modelo 3D do Luigi, inspirado no estilo Funko Pop!, foi cuidadosamente projetado para capturar o charme do personagem com proporções estilizadas e detalhes bem definidos.Ideal para impressão em PLA ou PETG, o modelo pode ser impresso sem suportes, garantindo um acabamento limpo.",
-    "category": "Brinquedos e Video-game"
+    "category": "Video-game"
   },
   {
     "image": "https://media.printables.com/media/prints/1171791/images/8823482_269756d2-c703-42db-9ccb-9cfcb2a731d7_738504a4-866b-447a-abc6-08dae312f60c/thumbs/inside/1600x1200/png/ancient-swordsman.webp",
@@ -75,19 +93,19 @@
     "image": "https://makerworld.bblmw.com/makerworld/model/USe64d7a6d30baf3/design/2025-01-21_6398ac00cda18.jpg?x-oss-process=image/resize,w_1000/format,webp",
     "name": "Neurónio Articulado",
     "description": "Esta é uma célula neuronal articulada impressa em 3D. A placa é uma maneira engraçada de exibi-la e dá-la de presente para alguém com filhos ou colocar em sua própria mesa ou prateleira para um pouco de bom humor.",
-    "category": "Biologia"
+    "category": "Educacional"
   },
   {
     "image": "https://cdn.thingiverse.com/renders/6a/af/29/8c/89/50834a4d902a7af3a10e0c762378654d_display_large.jpg",
     "name": "Mini célula animal multicolorida",
     "description": "Este modelo multicolorido de uma célula mostra como a impressão 3D pode ser benéfica nos espaços educacionais e médicos. Não apenas mostra diferentes níveis das células, mas as diferentes cores destacam áreas de interesse.",
-    "category": "Biologia"
+    "category": "Educacional"
   },
   {
     "image": "https://cdn.thingiverse.com/assets/90/c1/91/79/ef/large_display_Resized_2.jpg",
     "name": "Modelo de crânio humano",
     "description": "Este modelo de crânio humano pode ser usado para aprender anatomia ou apenas enlouquecer seus amigos.",
-    "category": "Biologia"
+    "category": "Educacional"
   },
   {
     "image": "https://thangs.com/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fproduction-thangs-public%2Fuploads%2Fattachments%2F82d9abd4-a912-470e-9948-7e1090d53bfd%2FFlexi_Cat-thangs-3.jpg&w=3840&q=85",
@@ -112,5 +130,23 @@
     "name": "Porta-canetas de caranguejo",
     "description": "Um porta-canetas de caranguejo fofo para segurar uma de suas canetas.",
     "category": "Animais"
+  },
+  {
+    "image": "https://makerworld.bblmw.com/makerworld/model/DSM00000001075902/design/2025-02-05_0d8fc05ed1b97.jpg?x-oss-process=image/resize,w_1000/format,webp",
+    "name": "Escudo Hyliano",
+    "description": "O escudo hylian da série Legend of Zelda, este modelo é o mais próximo daqueles vistos em Skyward Sword, BOTW e TOTK.",
+    "category": "Video-game"
+  },
+  {
+    "image": "https://makerworld.bblmw.com/makerworld/model/US74bc2fe4f032d4/design/2024-09-28_fcc3e902f19ea.jpg?x-oss-process=image/resize,w_1000/format,webp",
+    "name": "Boneco Pikachu",
+    "description": "Pikachu é um Pokémon especializado em atacar oponentes de longe com eletricidade. Às vezes, seus ataques até deixam os Pokémon oponentes paralisados! Tenha um Pikachu impresso!",
+    "category": "Video-game"
+  },
+  {
+    "image": "https://makerworld.bblmw.com/makerworld/model/US37f202a49c9a7e/design/2024-09-12_0262984e9f195.jpg?x-oss-process=image/resize,w_1000/format,webp",
+    "name": "Raposa Minecraft",
+    "description": "Tudo o que você precisa são de três cores: laranja, preto e branco. É fácil!",
+    "category": "Video-game"
   }
 ]
