@@ -63,7 +63,7 @@ const FAQ = () => {
           Sou um <span className="bold">Maker! Como posso participar?</span>
         </h3>
         <p>
-          Que legal! Entre em contato conosco pelo WhatsApp ou Instagram e lhe
+          Que legal! Entre em contato conosco pelo Instagram e lhe
           daremos todas as informações necessárias para nossa parceria.
         </p>
       </div>

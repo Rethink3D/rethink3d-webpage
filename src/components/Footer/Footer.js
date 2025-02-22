@@ -1,5 +1,5 @@
 import React from "react";
-import { FaInstagram, FaWhatsapp } from "react-icons/fa";
+import { FaInstagram} from "react-icons/fa";
 import "./Footer.css";
 
 const Footer = () => {
@@ -13,14 +13,6 @@ const Footer = () => {
             rel="noopener noreferrer"
           >
             <FaInstagram className="icon" /> Instagram
-          </a>
-          <a
-            //href="https://wa.me/seunumerodetelefone"
-            href="/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FaWhatsapp className="icon" /> WhatsApp
           </a>
         </div>
         <div className="footer-rights">
