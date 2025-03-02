@@ -252,5 +252,23 @@
     "name": "Porta-canetas de caranguejo",
     "description": "Um porta-canetas de caranguejo fofo para segurar uma de suas canetas.",
     "category": "Animais"
+  },
+  {
+    "image": "/assets/images/products/suporte-chaves.jpg",
+    "name": "Suporte para Chaves de Fenda",
+    "description": "Um suporte para chaves de fenda extremamente prático.",
+    "category": "Engenharia"
+  },
+  {
+    "image": "/assets/images/products/ventilador.jpg",
+    "name": "Ventilador de Refrigeração para Motor Elétrico",
+    "description": "Modelo simples e prático de ventilador para refrigeração de motor.",
+    "category": "Engenharia"
+  },
+  {
+    "image": "/assets/images/products/cartao-simbolos.jpg",
+    "name": "Cartão de Símbolos Eletrônicos",
+    "description": "Este é um modelo simples do tamanho de um cartão de crédito com símbolos eletrônicos.",
+    "category": "Engenharia"
   }
 ]
