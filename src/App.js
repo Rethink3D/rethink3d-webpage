@@ -5,7 +5,7 @@ import { ToastContainer } from "react-toastify";
 
 function App() {
   return (
-    <div>
+    <>
       <ToastContainer
         position="bottom-center"
         autoClose={5000}
@@ -19,7 +19,7 @@ function App() {
         theme="light"
       />
       <LandingPage />
-    </div>
+    </>
   );
 }
 

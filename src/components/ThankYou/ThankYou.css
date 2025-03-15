@@ -1,0 +1,8 @@
+.thankyou-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 80vw;
+  margin: auto;
+  color: white;
+}

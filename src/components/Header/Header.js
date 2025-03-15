@@ -1,5 +1,4 @@
 import React, { useState, useEffect, useRef } from "react";
-import { Link } from "react-scroll";
 import "./Header.css";
 import logo from "../../assets/images/logo.svg";
 
@@ -44,20 +43,18 @@ const Header = () => {
 
       <nav ref={menuRef} className={`menu ${isMenuOpen ? "open" : ""}`}>
         <ul>
+          {/* <li>
+                <Link to="faq" smooth={true} duration={500} onClick={closeMenu}>
+                  Quem somos
+                </Link>
+              </li>
+              <li>
+                <Link to="faq" smooth={true} duration={500} onClick={closeMenu}>
+                  FAQ
+                </Link>
+              </li> */}
           <li>
-            <Link to="faq" smooth={true} duration={500} onClick={closeMenu}>
-              Quem somos
-            </Link>
-          </li>
-          <li>
-            <Link to="faq" smooth={true} duration={500} onClick={closeMenu}>
-              FAQ
-            </Link>
-          </li>
-          <li>
-            <Link to="contato" smooth={true} duration={500} onClick={closeMenu}>
-              Contato
-            </Link>
+            <a href="https://instagram.com/_rethink3d">Contato</a>
           </li>
         </ul>
       </nav>
