@@ -17,7 +17,7 @@ const Footer = () => {
         </div>
         <div className="footer-rights">
           <p>© 2025 Rethink3D</p>
-          <p>Todos os direitos reservados</p>
+          <p>Todos os direitos reservados.</p>
         </div>
       </div>
     </footer>
